@@ -1,0 +1,171 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: rgb(192, 210, 225);
+}
+
+.music_container {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.inner-container {
+    width: 50%;
+    height: 450px;
+    background-color: #fff;
+    border-radius: 20px;
+    box-shadow: 0px 8px 24px rgba(0, 0, 0, 0.2);
+
+}
+
+.fa-music {
+    background-color: #000;
+    color: #fff;
+    padding: 5px;
+    margin: 15px 10px;
+    border-radius: 45px;
+}
+
+.topbarSearch {
+    margin-left: 50px;
+}
+
+.search-music {
+    padding: 5px;
+    margin-left: 10px;
+    width: 50%;
+    border: none;
+    outline: none;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+
+}
+
+.hero-section {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 100%;
+    margin-top: 30px;
+}
+
+.play-container {
+    width: 30%;
+    height: 300px;
+    border-radius: 15px;
+    border: none;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+
+.songList {
+    width: 40%;
+    height: 40vh;
+    background-color: rgb(192, 210, 225);
+    border-radius: 15px;
+    border: none;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    
+}
+
+.musicImg {
+    background-color: rgb(192, 210, 225);
+    width: 120px;
+    height: 120px;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin: 20px 40px;
+    border-radius: 15px;
+    border: none;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+
+.musicName {
+    margin-top: 30px;
+    font-size: 13px;
+    margin-left: 20px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif
+}
+
+.music_Control {
+    display: flex;
+    justify-content: space-around;
+    margin-left: 40px;
+    margin-right: 40px;
+}
+.listCon{
+    cursor: pointer;
+}
+.listCon:hover {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    background-color: rgba(0, 0, 0, 0.762);
+    color: rgb(255, 255, 255);
+    border-radius: 5px;
+    /* border: 1px solid black; */
+}
+.progressedCon{
+    margin: auto;
+    width: 80%;
+    height: 5px;
+    background-color: rgb(192, 210, 225);
+    border-radius: 30px;
+    transition: all 0.7s;
+}
+.progress{
+    height: 5px;
+    width: 20%;
+    background-color: #000;
+    border-radius: 50px;
+    transition: all 0.7s;
+}
+.timeduration{
+    display: flex;
+    justify-content: space-between;
+}
+
+
+@media only screen and (max-width: 600px) {
+    .hero-section {
+        display: flex;
+        justify-content: space-around;
+        flex-direction: column;
+        align-items: center;
+        flex-wrap: wrap;
+        width: 100%;
+        margin-top: 30px;
+    }
+    .play-container {
+        width: 90%;
+        height: 300px;
+        border-radius: 15px;
+        border: none;
+        box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    }
+    
+    .songList {
+        display: none;
+        width: 90%;
+        height: 40vh;
+        background-color: rgb(192, 210, 225);
+        border-radius: 15px;
+        border: none;
+        box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+        
+    }
+    .search-music {
+        padding: 5px;
+        margin-left: 10px;
+        width: 20%;
+        border: none;
+        outline: none;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    
+    }
+  }
